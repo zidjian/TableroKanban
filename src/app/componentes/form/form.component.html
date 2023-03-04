@@ -1,0 +1,19 @@
+
+<form>
+    <input
+        type="text"
+        #validar_nombre="ngModel"
+        name="actividad"
+        [(ngModel)]="nueva_actividad"
+        required
+    />
+    <button
+        type="submit"
+        class="btn btn_add"
+        [class.btn_inactivo]="validar_nombre.invalid"
+        [disabled]="validar_nombre.invalid"
+        (click)="anadirActividad()"
+    >
+        Guardar
+    </button>
+</form>

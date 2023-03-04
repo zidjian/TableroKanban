@@ -1,0 +1,30 @@
+            <div class="actividades">
+                <div class="actividad" *ngIf="actividades[tipo].length == 0; then sinActividades;else conActividades"></div>
+                <ng-template #conActividades>
+                    <div class="actividad" *ngFor="let elemento of actividades[tipo]; index as i">
+                        <h3>{{ elemento }}</h3>
+                        <div class="grupo_botones">
+                            <button
+                                type="button"
+                                class="btn btn_fa btn_back"
+                                [class.btn_inactivo]="tipo<1"
+                                (click)="regresarActividad(tipo, i)"
+                            ></button>
+                            <button
+                                type="button"
+                                class="btn btn_fa btn_delete"
+                                (click)="eliminarActividad(tipo, i)"
+                            ></button>
+                            <button
+                                type="button"
+                                class="btn btn_fa btn_next"
+                                [class.btn_inactivo]="tipo>=2"
+                                (click)="pasarActividad(tipo, i)"
+                            ></button>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template #sinActividades>
+                    <div class="actividad sin_actividad"></div>
+                </ng-template>
+            </div>

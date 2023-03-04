@@ -1,0 +1,33 @@
+/* ---- Inicio: Fuentes */
+
+@font-face {
+    font-family: 'Font-awesome pro 6';
+    font-weight: 300;
+    src: url("./../fonts/fa-light-300.ttf");
+}
+
+.btn_fa::before {
+    font-family: "Font-awesome pro 6";
+}
+
+.btn_delete::before {
+    content: "\f1f8";
+}
+
+.btn_back::before {
+    content: "\f104";
+}
+
+.btn_next::before {
+    content: "\f105";
+}
+
+.btn_up::before {
+    content: "\f1f8";
+}
+
+.btn_down::before {
+    content: "\f107";
+}
+
+/* ---- Fin: Fuentes */

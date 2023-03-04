@@ -1,0 +1,15 @@
+
+    <div class="tablero">
+        <div class="t_elemento por_hacer">
+            <h2 class="tablero_titulo">Por hacer</h2>
+            <app-actividad [tipo]="por_hacer"></app-actividad>
+        </div>
+        <div class="t_elemento en_progreso">
+            <h2 class="tablero_titulo">En progreso</h2>
+            <app-actividad [tipo]="en_proceso"></app-actividad>
+        </div>
+        <div class="t_elemento finalizado">
+            <h2 class="tablero_titulo">Finalizado</h2>
+            <app-actividad [tipo]="finalizado"></app-actividad>
+        </div>
+    </div>

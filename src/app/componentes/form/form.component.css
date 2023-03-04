@@ -1,0 +1,5 @@
+.btn_add {
+    background-color: var(--secundario);
+    display: block;
+    margin: auto;
+}

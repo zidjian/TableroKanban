@@ -1,0 +1,13 @@
+/* ---- Inicio: Root */
+
+:root {
+    --principal: #FF4848;
+    --secundario: #55C674;
+    --letra-oscura: #000;
+    --letra-clara: #828282;
+    --blanco: #ffffff;
+    --gris: #F0F0F0;
+    --sombra: 0 0 5px -1px rgba(0, 0, 0, 0.25);
+}
+
+/* ---- Fin: Root */

@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('./assets/css/reseteo.css');
+@import url('./assets/css/fuentes.css');
+@import url('./assets/css/colores.css');
+
+/* ---- Inicio: Principal */
+
+html,body {
+    font-family: 'Roboto';
+    font-size: 16px;
+    background-color: #F5F5F5;
+}
+
+body {
+    padding: 1rem;
+}
+
+.btn {
+    border: none;
+    padding: .5rem 2rem;
+    font-size: .8rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    background-color: var(--secundario);
+    color: var(--blanco);
+}
+
+input {
+    width: 100%;
+    font-size: .8rem;
+    color: var(--letra-clara);
+    border-radius: .5rem;
+    border: solid 1px var(--letra-clara);
+    padding: .5rem 1rem;
+    box-sizing: border-box;
+    margin-bottom: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.btn_inactivo {
+    background-color: var(--letra-clara) !important;
+}
+
+.grupo_botones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.btn_delete {
+    background-color: var(--principal);
+}
+
+/* ---- Fin: Principal */
+
+

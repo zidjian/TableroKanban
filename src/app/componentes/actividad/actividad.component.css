@@ -1,0 +1,25 @@
+.actividad {
+    margin-bottom: 1rem;
+    background-color: var(--gris);
+    padding: 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.sin_actividad::before {
+    content: 'Sin actividades';
+    font-size: .8rem;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.actividad h3 {
+    font-size: .8rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: .5rem;
+}
